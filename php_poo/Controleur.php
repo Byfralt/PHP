@@ -12,6 +12,10 @@
                 'type' => $type,
                 'force' => $force,
                 'niveau' => $niveau,
+<<<<<<< HEAD
+=======
+                echo "toto"
+>>>>>>> Kyllian
             );
             array_push($this -> tabPerso,$perso);
         }
