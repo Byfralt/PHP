@@ -58,7 +58,11 @@ li{
     width: 90%;
     font-size: 100%;
     padding: 5px;
+    margin-left: 500px;
+    margin-top: 100px;
     display: flex;
+    position: absolute;
+    align-items: center;
     justify-content: center;
 }
 
@@ -66,9 +70,148 @@ li{
     margin-right:10px;
 }
 
-#B2{
-    margin-left: 10px;
+.BoutonCree{
+    width: 200px;
+    height: 120px;
+    font-size: 17px;
 }
+
+.vs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.VS1{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.BoutonCombat{
+    width: 150px;
+    height: 75px;
+    font-size: 15px;
+}
+
+.CboutonCombat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bouton2{
+    width: 90%;
+    font-size: 100%;
+    padding: 5px;
+    margin-left: 1790px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BoutonCree2{
+    width: 200px;
+    height: 120px;
+    font-size: 17px;
+}
+
+#B3{
+    margin-right:10px;
+}
+
+.carrediv{
+    margin-top: -200px;
+    margin-left: -640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#carre {
+    z-index: 1;
+    width  : 300px;
+    height : 350px;
+    background : rgb(240, 240, 240);
+    border-radius: 30px;
+    border: 1px solid rgb(117, 117, 117);
+    box-shadow: 0px 0px 15px rgb(110, 110, 110);;
+}
+
+.Formulaire{
+    width: 300px;
+    height: 145px;
+    /* Mise de la zone vert au centre de l'ecran */
+   /* background-color: #32a852;*/
+    margin-left: 340px;
+    margin-right: auto;
+    margin-top: -100px;
+    /* Mise de l'intérieur de la zone vert au centre de le la zone verte */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.zoneform{
+    /* background-color: green; */
+    margin-top: 20px;
+    width: 300px;
+    height: auto;
+    margin-left:-340px;
+}
+
+.Formulaire li{
+    margin: 4px;
+}
+
+.zoneform input{
+    border-width : 0;
+}
+
+select{
+    border-width : 0;
+    height:35px;
+    width: 160px;
+    border-radius:5px;
+}
+
+.BouttonVali{
+    width: 180px;
+    height: 60px;
+    margin-left: 402px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(240deg, rgba(2,0,36,1) 0%, rgb(160, 160, 160) 0%, rgb(121, 121, 121) 100%);;
+    border: none;
+    border-radius: 15px;
+    /* background-color: #32a852; */
+  }
+
+.Titre{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:30px;
+    margin-left:490px;
+    margin-bottom: 100px;
+
+}
+  
+
+
 
 /* ______________ FIN du personnage ______________ */
 
