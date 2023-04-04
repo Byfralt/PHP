@@ -7,7 +7,7 @@
         }
         public function creerPerso(){
             $perso = array(
-                'nom' => $nom,
+                'nom' => $nogit,
                 'pv' => $pv,
                 'type' => $type,
                 'force' => $force,
