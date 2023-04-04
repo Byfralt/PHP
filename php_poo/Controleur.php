@@ -12,7 +12,7 @@
                 'type' => $type,
                 'force' => $force,
                 'niveau' => $niveau,
-                echo "toto"
+                echo "titi"
             );
             array_push($this -> tabPerso,$perso);
         }
