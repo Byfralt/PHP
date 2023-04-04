@@ -2,33 +2,42 @@
 class Personnage {
 
     // Propriété
+
     private string $nom;
     private int $pv;
     private string $type;
     private int $force;
     private int $niveau;
 
+
     //==================Méthodes==================
     
     //__________________Constructeur__________________
+
     public function __construct($nom, $pv, $type, $force, $niveau) {
     $this -> nom = $nom;
     $this -> pv = $pv;
     $this -> type = $type;
     $this -> force = $force;
     $this -> niveau = $niveau;
+    $this -> exp = 0
+    $this -> def = 3
 	}
 
     //__________________Attaquer__________________
-    public function attaquer() {
+
+    public function attaquer($atkJoueur, $pvEnnemi) {
 
         //pv ennemi - attaque du joueur ?
         //retourner pv ennemi après attaque
 
+        $pvEnnemi = $pvEnnemi - $atkJoueur;
         echo "attaque";
+        return $pvEnnemi
     }
 
     //__________________Défendre__________________
+
     public function défendre() {
 
         //pv joueur - attaque ennemi ?
@@ -40,16 +49,29 @@ class Personnage {
     }
 
     //_______________Gagne Expérience_______________
-    public function getExp() {
+
+    public function getExp($niveau, $exp) {
 
         //joueur gagne exp basé sur ennemi vaincu?
         //Basé sur niveau ennemi? type ennemi?
         //retourner exp joueur après ajout
-
-        echo "level up";
+        $expAct = $exp;
+        $baseCost = 100;
+        $cost = $baseCost * 1,4 ** $niveau;
+        while ($exp > 0) {
+            if ($exp >= $cost) {
+                echo "level up";
+                $exp = $exp - $cost
+                $niveau += 1
+                $cost = $baseCost * 1,4 ** $niveau;
+            }
+        }
+        
+        return $niveau
     }
 
     //____________________nom_____________________
+
     public function set_nom($nom) {
         $this -> nom = $nom;
     }
@@ -59,6 +81,7 @@ class Personnage {
     }
 
     //____________________pv_____________________
+
     public function set_pv($pv) {
         $this -> pv = $pv;
     }
@@ -68,6 +91,7 @@ class Personnage {
     }
 
     //____________________type_____________________
+
     public function set_type($type) {
         $this -> type = $type;
     }
@@ -77,6 +101,7 @@ class Personnage {
     }
 
     //____________________force_____________________
+
     public function set_force($force) {
         $this -> force = $force;
     }
@@ -86,6 +111,7 @@ class Personnage {
     }
 
     //____________________niveau_____________________
+    
     public function set_niveau($niveau) {
         $this -> niveau = $niveau;
     }
