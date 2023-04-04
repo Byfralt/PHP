@@ -20,8 +20,9 @@ class Personnage {
     $this -> type = $type;
     $this -> force = $force;
     $this -> niveau = $niveau;
-    $this -> exp = 0
-    $this -> def = 3
+    $this -> exp = 0;
+    $this -> defWait = 3;
+    $this -> def = False;
 	}
 
     //__________________Attaquer__________________
@@ -38,14 +39,16 @@ class Personnage {
 
     //__________________Défendre__________________
 
-    public function défendre() {
+    public function défendre($def) {
 
-        //pv joueur - attaque ennemi ?
-        //retourner pv joueur
-
-        //boost de défence pour joueur ?
-
-        echo "defendre";
+        //joueur ne prends ancun dégat si en défence
+        //la défence à un cooldown de 3 tours pour l'instant
+        if ($def >= 3) {
+            def = True;
+            echo "defendre";
+        } else {
+            echo "defence en cooldown";
+        }
     }
 
     //_______________Gagne Expérience_______________
@@ -61,10 +64,10 @@ class Personnage {
         while ($exp > 0) {
             if ($exp >= $cost) {
                 echo "level up";
-                $exp = $exp - $cost
-                $niveau += 1
+                $exp = $exp - $cost;
+                $niveau += 1;
                 $cost = $baseCost * 1,4 ** $niveau;
-                echo "toto"
+                echo "toto";
             }
         }
         
