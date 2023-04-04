@@ -5,6 +5,7 @@
             $perso = new Personnage($nom,$pv,$type,$force,$niveau);
             // $perso = new Personnage('bob',100,"eau",40,3);
         }
+
         public function creerPerso(){
             $perso = array(
                 'nom' => $nom,
@@ -12,9 +13,11 @@
                 'type' => $type,
                 'force' => $force,
                 'niveau' => $niveau,
+                echo "toto"
             );
             array_push($this -> tabPerso,$perso);
         }
+
         public function Afficher(){
             foreach($this->tabPerso as $perso)
                 echo "Nom: ".$perso['nom']."<br>";
