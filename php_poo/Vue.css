@@ -121,21 +121,36 @@ li{
 }
 
 .carrediv{
-    margin-top: -200px;
+    margin-top:-50px;
     margin-left: -640px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.carrediv2{
+    margin-top:-176px;
+    margin-left: 890px;
+}
   
 #carre {
+    position:absolute;
     z-index: 1;
     width  : 300px;
     height : 350px;
     background : rgb(240, 240, 240);
     border-radius: 30px;
     border: 1px solid rgb(117, 117, 117);
-    box-shadow: 0px 0px 15px rgb(110, 110, 110);;
+}
+
+#carre2 {
+    position:absolute;
+    z-index: 1;
+    width  : 300px;
+    height : 350px;
+    background : rgb(240, 240, 240);
+    border-radius: 30px;
+    border: 1px solid rgb(117, 117, 117);
 }
 
 .Formulaire{
@@ -209,6 +224,15 @@ select{
     margin-bottom: 100px;
 
 }
+
+.cut{
+    display: flex;
+    position: absolute;
+    height : 30px;
+    width: 30px;
+    margin-left:250px;
+    margin-top: 10px;
+  }
   
 
 

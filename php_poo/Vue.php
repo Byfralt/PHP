@@ -9,7 +9,9 @@
 </head>
 <body>
     <!-- Formulaire -->
+
     <!-- Personnage -->
+
     <div class="container">
         <div class="bouton">
             <button id="B1" class="BoutonCree">Ajouter Un Personnage</button>
@@ -26,38 +28,74 @@
     </div>
 
     <div class="carrediv">
-            <div id="carre" style="display: none;">
-                <div class="zoneform">
-                    <br>
-                    <div class="Titre"><strong>PERSONNAGE</strong></div>
-                    <br>
-                    <form method="/list" action="TraitementFormulaire.php">
-                        <ul class="Formulaire">
-                            <li class="nom"><input type="text" size="30" id="nom" name="nom" placeholder="  Nom" style="height:25px;border-radius:5px;width:150px;" class="nom" required/> </li>
-                            <li class="type"><select id="type" name="type">
-                                                <option> Type</option>
-                                                <option> Eau</option>
-                                                <option> Feu</option>
-                                                <option> Terre</option>
-                                                <option> Vent</option>
-                                            </select>
-                            </li>
-                            <li class="espece"><select id="espece" name="espece">
-                                                <option> Espèce</option>
-                                                <option> Humanoide</option>
-                                                <option> Elfe</option>
-                                                <option> Nain</option>
-                                                <option> Orc</option>
-                                                <option> Dargon</option>
-                                                <option> Necromancien</option>
-                                            </select>
-                            </li>
-                        </ul>
-                        <button class="BouttonVali" id="button4" value="Validation" name="Validation">Validation</button>
-                    </form>
-                </div>
+        <div id="carre" style="display: none;">
+            <input type="image" class="cut" id="B1.1" value="" src="image/croix.png">
+            <div class="zoneform">
+                <br>
+                <div class="Titre"><strong>PERSONNAGE</strong></div>
+                <br>
+                <form method="/list" action="">
+                    <ul class="Formulaire">
+                        <li class="nom"><input type="text" size="30" id="nom" name="nom" placeholder="  Nom" style="height:25px;border-radius:5px;width:150px;" class="nom" required/> </li>
+                        <li class="type"><select id="type" name="type">
+                                            <option> Type</option>
+                                            <option> Eau</option>
+                                            <option> Feu</option>
+                                            <option> Terre</option>
+                                            <option> Vent</option>
+                                        </select>
+                        </li>
+                        <li class="espece"><select id="espece" name="espece">
+                                            <option> Espèce</option>
+                                            <option> Humanoide</option>
+                                            <option> Elfe</option>
+                                            <option> Nain</option>
+                                            <option> Orc</option>
+                                            <option> Dargon</option>
+                                            <option> Necromancien</option>
+                                        </select>
+                        </li>
+                    </ul>
+                    <button class="BouttonVali" id="V1" value="Validation" name="Validation">Validation</button>
+                </form>
             </div>
         </div>
+    </div>
+
+    <div class="carrediv2">
+        <div id="carre2" style="display: none;">
+            <input type="image" class="cut" id="B3.1" value="" src="image/croix.png">
+            <div class="zoneform">
+                <br>
+                <div class="Titre"><strong>PERSONNAGE</strong></div>
+                <br>
+                <form method="/list" action="">
+                    <ul class="Formulaire">
+                        <li class="nom"><input type="text" size="30" id="nom" name="nom" placeholder="  Nom" style="height:25px;border-radius:5px;width:150px;" class="nom" required/> </li>
+                        <li class="type"><select id="type" name="type">
+                                            <option> Type</option>
+                                            <option> Eau</option>
+                                            <option> Feu</option>
+                                            <option> Terre</option>
+                                            <option> Vent</option>
+                                        </select>
+                        </li>
+                        <li class="espece"><select id="espece" name="espece">
+                                            <option> Espèce</option>
+                                            <option> Humanoide</option>
+                                            <option> Elfe</option>
+                                            <option> Nain</option>
+                                            <option> Orc</option>
+                                            <option> Dargon</option>
+                                            <option> Necromancien</option>
+                                        </select>
+                        </li>
+                    </ul>
+                    <button class="BouttonVali" id="V2" value="Validation" name="Validation">Validation</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="form.js"></script>
 </body>
