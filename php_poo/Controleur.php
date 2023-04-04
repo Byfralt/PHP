@@ -7,11 +7,11 @@
         }
         public function creerPerso(){
             $perso = array(
-                'nom' => $nom,
-                'pv' => $pv,
-                'type' => $type,
-                'force' => $force,
-                'niveau' => $niveau,
+                'nom' -> $nom,
+                'pv' -> $pv,
+                'type' -> $type,
+                'force' -> $force,
+                'niveau' -> $niveau,
             );
             array_push($this -> tabPerso,$perso);
         }
