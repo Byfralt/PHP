@@ -64,6 +64,7 @@ class Personnage {
                 $exp = $exp - $cost
                 $niveau += 1
                 $cost = $baseCost * 1,4 ** $niveau;
+                echo "toto"
             }
         }
         
