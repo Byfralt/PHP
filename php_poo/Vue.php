@@ -26,6 +26,10 @@
     <div class="CboutonCombat">
             <button id="B2" class="BoutonCombat">Commencer le Duel</button>
     </div>
+    <br>
+    <div class="Verif">
+            <button id="B4" class="BoutonVerif">Vérification</button>
+    </div>
 
     <div class="carrediv">
         <div id="carre" style="display: none;">
@@ -34,7 +38,6 @@
                 <br>
                 <div class="Titre"><strong>PERSONNAGE</strong></div>
                 <br>
-                <form method="/list" action="">
                     <ul class="Formulaire">
                         <li class="nom"><input type="text" size="30" id="nom" name="nom" placeholder="  Nom" style="height:25px;border-radius:5px;width:150px;" class="nom" required/> </li>
                         <li class="type"><select id="type" name="type">
@@ -56,7 +59,7 @@
                                         </select>
                         </li>
                     </ul>
-                    <button class="BouttonVali" id="V1" value="Validation" name="Validation">Validation</button>
+                    <button class="BouttonVali" id="V1" value="2" name="Validation">Validation</button>
                 </form>
             </div>
         </div>
@@ -69,7 +72,6 @@
                 <br>
                 <div class="Titre"><strong>PERSONNAGE</strong></div>
                 <br>
-                <form method="/list" action="">
                     <ul class="Formulaire">
                         <li class="nom"><input type="text" size="30" id="nom" name="nom" placeholder="  Nom" style="height:25px;border-radius:5px;width:150px;" class="nom" required/> </li>
                         <li class="type"><select id="type" name="type">
@@ -91,7 +93,7 @@
                                         </select>
                         </li>
                     </ul>
-                    <button class="BouttonVali" id="V2" value="Validation" name="Validation">Validation</button>
+                    <button class="BouttonVali2" id="V2" value="2" name="Validation">Validation</button>
                 </form>
             </div>
         </div>
