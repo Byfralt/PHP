@@ -17,7 +17,6 @@ class PersonnageControleur{
                 'type' => $type,
                 'force' => $force,
                 'niveau' => $niveau,
-                echo "toto"
             );
             array_push($this -> tabPerso,$perso);
         }
