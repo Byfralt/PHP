@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-print("test")
-=======
->>>>>>> 9548adf23b742d1214da2f8a793b596d0f5923a6
+
 <?php
 class Personnage {
 
@@ -136,10 +131,3 @@ $bob = new Personnage("bob", 16, "human", 12, 0);
 echo $bob->get_nom();
 echo "<br>";
 echo $bob -> get_pv();
-
-<<<<<<< HEAD
-?>
-=======
-?>
->>>>>>> Kyllian
->>>>>>> 9548adf23b742d1214da2f8a793b596d0f5923a6
