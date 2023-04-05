@@ -12,11 +12,24 @@ class PersonnageControleur{
 
         public function creerPerso(){
             $perso = array(
-                'nom' => $nom,
+                'nom' => $nogit,
                 'pv' => $pv,
                 'type' => $type,
                 'force' => $force,
                 'niveau' => $niveau,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                echo "toto"
+=======
+>>>>>>> Kyllian
+=======
+>>>>>>> dev
+=======
+>>>>>>> Kyllian
+>>>>>>> master
             );
             array_push($this -> tabPerso,$perso);
         }
@@ -97,12 +110,34 @@ class PersonnageControleur{
                 $exp = $exp - $cost;
                 $niveau += 1;
                 $cost = $baseCost * 1,4  $niveau;
+<<<<<<< HEAD
                 echo "titi";
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                echo "titi";
+>>>>>>> dev
+>>>>>>> master
             }
         }
 
         return $niveau
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+
+}
+=======
+=======
+            }
+        }
+        return $niveau
+    }
+>>>>>>> Kyllian
+>>>>>>> master
     // creation de liste avec info de perso
     // public $PersonnageJeu = array();
     // _____($nom,$pv,$type,$force,$niveau)_____
@@ -133,6 +168,17 @@ class PersonnageControleur{
     // array_push($this ->Elfe,$p);
 
     // _____ _____( Nain ) _____ _____
+<<<<<<< HEAD
     // ils sont petit mais c'est pas une critique meme si ils sont tres petit (comme des fourmis)
 }   
+=======
+<<<<<<< HEAD
+    // ils sont petit mais c'est pas une critique meme si ils sont tres petit (comme des fourmis)
+}   
+>>>>>>> dev
+=======
+    // ils sont petit mais c'est pas une critique meme si ils sont tres petit (comme des fourmisgit)
+}   
+>>>>>>> Kyllian
+>>>>>>> master
 ?>
