@@ -1,7 +1,7 @@
 <?php
 class PersonnageControleur{
     public $tabPerso = array();
-    public $view = 
+    public $view ;
     public function __construct($this,$nom,$pv,$type,$force,$niveau){
     class PersonnageControleur{
         public $tabPerso = array();
@@ -44,10 +44,9 @@ class PersonnageControleur{
                 $force = $_POST['force'];
             }
             $p = new Mage($nom,$pv,$type,$force)
-            array_push($this ->personnage,$p);
-            $this -> view = new PersonnageView($this -> personnage);
-            $t =  json_encode($tabPerso);
-            $this -> AfficherPerso();
+            array_push($this ->tabPerso,$p);
+            $this -> view = new PersonnageView($this -> tabPerso);
+            $this ->view ->// methode de la vue ();
         }
     }
     public function SavePerso(){
@@ -69,7 +68,7 @@ class PersonnageControleur{
 
     //__Défendre__
 
-    public function défendre($defWait) {
+    public function defendre($defWait) {
 
         //joueur ne prends ancun dégat si en défence
         //la défence à un cooldown de 3 tours pour l'instant
