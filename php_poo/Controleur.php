@@ -19,11 +19,14 @@ class PersonnageControleur{
                 'niveau' => $niveau,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 echo "toto"
 =======
 >>>>>>> Kyllian
 =======
 >>>>>>> dev
+=======
+>>>>>>> Kyllian
             );
             array_push($this -> tabPerso,$perso);
         }
@@ -105,6 +108,7 @@ class PersonnageControleur{
                 $niveau += 1;
                 $cost = $baseCost * 1,4  $niveau;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 echo "titi";
 >>>>>>> dev
@@ -118,6 +122,12 @@ class PersonnageControleur{
 
 }
 =======
+=======
+            }
+        }
+        return $niveau
+    }
+>>>>>>> Kyllian
     // creation de liste avec info de perso
     // public $PersonnageJeu = array();
     // _____($nom,$pv,$type,$force,$niveau)_____
@@ -148,7 +158,12 @@ class PersonnageControleur{
     // array_push($this ->Elfe,$p);
 
     // _____ _____( Nain ) _____ _____
+<<<<<<< HEAD
     // ils sont petit mais c'est pas une critique meme si ils sont tres petit (comme des fourmis)
 }   
 >>>>>>> dev
+=======
+    // ils sont petit mais c'est pas une critique meme si ils sont tres petit (comme des fourmisgit)
+}   
+>>>>>>> Kyllian
 ?>

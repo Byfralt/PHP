@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 print("test")
 =======
 =======
@@ -17,6 +18,13 @@ print("test")
 =======
 >>>>>>> 9548adf23b742d1214da2f8a793b596d0f5923a6
 >>>>>>> dev
+=======
+=======
+<<<<<<< HEAD
+print("test")
+=======
+>>>>>>> 9548adf23b742d1214da2f8a793b596d0f5923a6
+>>>>>>> Kyllian
 <?php
 class Personnage {
 
@@ -87,9 +95,13 @@ class Personnage {
                 $niveau += 1;
                 $cost = $baseCost * 1,4 ** $niveau;
 <<<<<<< HEAD
+<<<<<<< HEAD
                 echo "titi";
 =======
 >>>>>>> dev
+=======
+                echo "titi";
+>>>>>>> Kyllian
             }
         }
         
@@ -158,15 +170,21 @@ echo $bob -> get_pv();
 ?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Kyllian
 =======
 =======
 >>>>>>> dev
+=======
+>>>>>>> Kyllian
 =======
 ?>
 >>>>>>> Kyllian
 >>>>>>> 9548adf23b742d1214da2f8a793b596d0f5923a6
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Kyllian
 =======
 >>>>>>> dev
+=======
+>>>>>>> Kyllian
