@@ -7,7 +7,7 @@ class PersonnageControleur{
         public $tabPerso = array();
         public function __construct($nom,$pv,$type,$force,$niveau){
             $perso = new Personnage($nom,$pv,$type,$force,$niveau);
-            // $perso = new Personnage('bob',100,"eau",40,3);
+
         }
 
         public function creerPerso(){
@@ -99,10 +99,38 @@ class PersonnageControleur{
                 $cost = $baseCost * 1,4  $niveau;
             }
         }
-
         return $niveau
     }
+    // creation de liste avec info de perso
+    // public $PersonnageJeu = array();
+    // _____($nom,$pv,$type,$force,$niveau)_____
+    // _____ _____( HUMANOÏDE ) _____ _____
+    // $p = new Humanoïde(Steve,100,eau,10);
+    // array_push($this ->Humanoïde,$p);
 
+    // $p = new Humanoïde(Alex,100,feu,10);
+    // array_push($this ->Humanoïde,$p);
 
-}
+    // $p = new Humanoïde(Herobrine,100,terre,10);
+    // array_push($this ->Humanoïde,$p);
+
+    // $p = new Humanoïde(Ben,100,vent,10);
+    // array_push($this ->Humanoïde,$p);
+
+    // _____ _____( Elfe ) _____ _____
+    // $p = new Elfe(Yavana,80,eau,10);
+    // array_push($this ->Elfe,$p);
+
+    // $p = new Elfe(Othar,80,feu,10);
+    // array_push($this ->Elfe,$p);
+    
+    // $p = new Elfe(Thalion,80,terre,10);
+    // array_push($this ->Elfe,$p);
+    
+    // $p = new Elfe(Elwing,80,vent,10);
+    // array_push($this ->Elfe,$p);
+
+    // _____ _____( Nain ) _____ _____
+    // ils sont petit mais c'est pas une critique meme si ils sont tres petit (comme des fourmisgit)
+}   
 ?>
