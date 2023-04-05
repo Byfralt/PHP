@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-print("test")
-=======
->>>>>>> 9548adf23b742d1214da2f8a793b596d0f5923a6
 <?php
 class Personnage {
 
@@ -73,7 +67,6 @@ class Personnage {
                 $exp = $exp - $cost;
                 $niveau += 1;
                 $cost = $baseCost * 1,4 ** $niveau;
-                echo "titi";
             }
         }
         
@@ -133,14 +126,72 @@ class Personnage {
     
 }
 
-$bob = new Personnage("bob", 16, "human", 12, 0);
-echo $bob->get_nom();
-echo "<br>";
-echo $bob -> get_pv();
+//=============Action BDD=============
 
-<<<<<<< HEAD
+try{
+    $bd = new PDO("mysql:host=localhost;dbname=personnage", "root");
+}catch(Exception $e){
+    die($e->getMessage);
+}
+
+//______________Ajout______________
+
+if(isset($_POST["nom"]) && 
+isset($_POST["typeP"])
+isset($_POST["espece"])){
+    
+    $nom = $_POST["nom"];
+    $typeP = $_POST["type"];
+    $espece = $_POST["espece"];
+
+    $sql = 'INSERT INTO class(nom, typeP, espece) VALUES(:nom, :typeP, :espece)';
+    $req = $bd->prepare($sql);
+    $req->bindParam('nom', $nom, PDO::PARAM_STR);
+    $req->bindParam('typeP', $typeP, PDO::PARAM_STR);
+    $req->bindParam('espece', $espece, PDO::PARAM_STR);
+    $req->execute();
+
+    $req = $bd->prepare('SELECT * FROM class ORDER BY idclass DESC LIMIT 1');
+    $req->execute();
+    $result = $req->fetch(PDO::FETCH_ASSOC);
+    echo $result;
+    
+} 
+
+//____________Modification____________
+
+if(isset($_POST["mId"]) &&
+isset($_POST["nom"]) && 
+isset($_POST["typeP"]) &&
+isset($_POST["espece"])){
+    
+    $mId = $_POST["mId"];
+    $nom = $_POST["nom"];
+    $typeP = $_POST["type"];
+    $espece = $_POST["espece"];
+
+    $sql = "UPDATE class SET nom = :nom, typeP = :typeP, espece = :espece WHERE idclass = $mId";
+    $req = $bd->prepare($sql);
+    $req->bindParam('nom', $nom, PDO::PARAM_STR);
+    $req->bindParam('typeP', $typeP, PDO::PARAM_STR);
+    $req->bindParam('espece', $espece, PDO::PARAM_STR);
+    $req->execute();
+
+    $req = $bd->prepare('SELECT * FROM class ORDER BY idclass DESC LIMIT 1');
+    $req->execute();
+    $result = $req->fetch(PDO::FETCH_ASSOC);
+    echo $result;
+
+}
+
+//_____________Supression_____________
+
+if(isset($_POST["idelete"])){
+    $idelete = $_POST["idelete"];
+    $del = "DELETE FROM class WHERE idclass = $idelete";
+    $req = $bd->prepare($del);
+    $req->execute();
+    
+}
+
 ?>
-=======
-?>
->>>>>>> Kyllian
->>>>>>> 9548adf23b742d1214da2f8a793b596d0f5923a6
