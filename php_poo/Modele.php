@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-print("test")
-=======
->>>>>>> 9548adf23b742d1214da2f8a793b596d0f5923a6
 <?php
 class Personnage {
 
