@@ -1,4 +1,42 @@
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+print("test")
+=======
+>>>>>>> 9548adf23b742d1214da2f8a793b596d0f5923a6
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+print("test")
+=======
+=======
+=======
+<<<<<<< HEAD
+print("test")
+=======
+>>>>>>> 9548adf23b742d1214da2f8a793b596d0f5923a6
+>>>>>>> Kyllian
+=======
+=======
+<<<<<<< HEAD
+print("test")
+=======
+>>>>>>> 9548adf23b742d1214da2f8a793b596d0f5923a6
+>>>>>>> dev
+=======
+=======
+<<<<<<< HEAD
+print("test")
+=======
+>>>>>>> 9548adf23b742d1214da2f8a793b596d0f5923a6
+>>>>>>> Kyllian
+>>>>>>> master
+>>>>>>> 3cbe13290d3c90c1947dd34baa7443f9caf06d5a
 <?php
 class Personnage {
 
@@ -68,6 +106,17 @@ class Personnage {
                 $exp = $exp - $cost;
                 $niveau += 1;
                 $cost = $baseCost * 1,4 ** $niveau;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                echo "titi";
+=======
+>>>>>>> dev
+=======
+                echo "titi";
+>>>>>>> Kyllian
+>>>>>>> master
             }
         }
         
@@ -131,3 +180,35 @@ $bob = new Personnage("bob", 16, "human", 12, 0);
 echo $bob->get_nom();
 echo "<br>";
 echo $bob -> get_pv();
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+?>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> Kyllian
+=======
+=======
+>>>>>>> dev
+=======
+>>>>>>> Kyllian
+>>>>>>> master
+=======
+?>
+>>>>>>> Kyllian
+>>>>>>> 9548adf23b742d1214da2f8a793b596d0f5923a6
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> Kyllian
+=======
+>>>>>>> dev
+=======
+>>>>>>> Kyllian
+>>>>>>> master
+>>>>>>> 3cbe13290d3c90c1947dd34baa7443f9caf06d5a
