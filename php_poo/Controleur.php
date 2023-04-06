@@ -1,7 +1,7 @@
 <?php
 class PersonnageControleur{
     public $tabPerso = array();
-    public $view = 
+    public $view ;
     public function __construct($this,$nom,$pv,$type,$force,$niveau){
     class PersonnageControleur{
         public $tabPerso = array();
@@ -12,24 +12,11 @@ class PersonnageControleur{
 
         public function creerPerso(){
             $perso = array(
-                'nom' => $nogit,
+                'nom' => $nom,
                 'pv' => $pv,
                 'type' => $type,
                 'force' => $force,
                 'niveau' => $niveau,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                echo "toto"
-=======
->>>>>>> Kyllian
-=======
->>>>>>> dev
-=======
->>>>>>> Kyllian
->>>>>>> master
             );
             array_push($this -> tabPerso,$perso);
         }
@@ -57,10 +44,9 @@ class PersonnageControleur{
                 $force = $_POST['force'];
             }
             $p = new Mage($nom,$pv,$type,$force)
-            array_push($this ->personnage,$p);
-            $this -> view = new PersonnageView($this -> personnage);
-            $t =  json_encode($tabPerso);
-            $this -> AfficherPerso();
+            array_push($this ->tabPerso,$p);
+            $this -> view = new PersonnageView($this -> tabPerso);
+            $this ->view ->// methode de la vue ();
         }
     }
     public function SavePerso(){
@@ -82,7 +68,7 @@ class PersonnageControleur{
 
     //__Défendre__
 
-    public function défendre($defWait) {
+    public function defendre($defWait) {
 
         //joueur ne prends ancun dégat si en défence
         //la défence à un cooldown de 3 tours pour l'instant
@@ -110,34 +96,10 @@ class PersonnageControleur{
                 $exp = $exp - $cost;
                 $niveau += 1;
                 $cost = $baseCost * 1,4  $niveau;
-<<<<<<< HEAD
-                echo "titi";
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                echo "titi";
->>>>>>> dev
->>>>>>> master
-            }
-        }
-
-        return $niveau
-    }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-
-}
-=======
-=======
             }
         }
         return $niveau
     }
->>>>>>> Kyllian
->>>>>>> master
     // creation de liste avec info de perso
     // public $PersonnageJeu = array();
     // _____($nom,$pv,$type,$force,$niveau)_____
@@ -168,17 +130,6 @@ class PersonnageControleur{
     // array_push($this ->Elfe,$p);
 
     // _____ _____( Nain ) _____ _____
-<<<<<<< HEAD
-    // ils sont petit mais c'est pas une critique meme si ils sont tres petit (comme des fourmis)
-}   
-=======
-<<<<<<< HEAD
-    // ils sont petit mais c'est pas une critique meme si ils sont tres petit (comme des fourmis)
-}   
->>>>>>> dev
-=======
     // ils sont petit mais c'est pas une critique meme si ils sont tres petit (comme des fourmisgit)
 }   
->>>>>>> Kyllian
->>>>>>> master
 ?>
