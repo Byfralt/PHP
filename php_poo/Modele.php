@@ -126,9 +126,14 @@ class Personnage {
     
 }
 
+<<<<<<< HEAD
 $bob = new Personnage("bob", 16, "human", 12, 0);
 echo $bob->get_nom();
 echo "<br>";
 echo $bob -> get_pv();
 echo "titi"
 ?>
+=======
+?>
+
+>>>>>>> master
