@@ -1,6 +1,14 @@
 <?php
 class Personnage {
 
+    //BDD
+
+    try{
+        $bd = new PDO("mysql:host=localhost;dbname=personnage", "root");
+    }catch(Exception $e){
+        die($e->getMessage);
+    }
+
     // Propriété
 
     private string $nom;
@@ -16,14 +24,26 @@ class Personnage {
 
     public function __construct($nom, $pv, $type, $force, $niveau) {
     $this -> nom = $nom;
-    $this -> pv = $pv;
     $this -> type = $type;
-    $this -> force = $force;
     $this -> niveau = $niveau;
     $this -> exp = 0;
     $this -> defWait = 3;
     $this -> def = False;
+    if ($type == "Eau") {
+        $this -> pv = round($pv * 1,2);
+        $this -> force = round($force * 0,9);
+    } elseif  ($type == "Feu") {
+        $this -> pv = round($pv * 0,9);
+        $this -> force = round($force * 1,2);
+    } elseif  ($type == "Terre") {
+        $this -> pv = round($pv * 1,35);
+        $this -> force = round($force * 1,05);
+	} else {
+        $this -> pv = round($pv * 0,9);
+        $this -> force = round($force * 1,2);
 	}
+
+    }
 
     //__________________Attaquer__________________
 
@@ -122,9 +142,12 @@ class Personnage {
     public function get_niveau() {
         return $this -> niveau;
     }
-
     
 }
 
+<<<<<<< HEAD
 ?>
 
+=======
+?>
+>>>>>>> justin
